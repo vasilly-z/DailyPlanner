@@ -1,0 +1,26 @@
+{
+  "name": "dailyplanner",
+  "version": "1.0.0",
+  "description": "Сделать SPA веб-приложение. Функции приложения:",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrently \"nodemon backend/server.js --prefix backend\" \"npm start --prefix frontend\"",
+    "backend": "cd backend && nodemon server.js",
+    "frontend": "cd frontend && npm start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-session": "^1.18.1",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9"
+  }
+}
